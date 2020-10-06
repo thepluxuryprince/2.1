@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная 2.1</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<form name="form1">
+    <img name="pic" id="img1" src="alohadance.gif" alt="">
+    <img name="pic" id="img2" src="arthas.gif" alt=""><p>
+    <input type="button" class="button" id="btn" value="Обменять"><br>
+    <audio loop preload="auto" controls="controls" src="bgaudio.mp3" autoplay="autoplay"></audio>
+    </p>
+</form>
+<script>
+    (function () {
+        var btn = document.getElementById("btn");
+        btn.onclick = function () {
+            var img1 = document.getElementById("img1");
+            var img2 = document.getElementById("img2");
+
+            return function () {
+                var tmp = img1.src;
+                img1.src = img2.src;
+                img2.src = tmp;
+            }
+        }();
+    })();
+</script>
+</body>
+</html>

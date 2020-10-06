@@ -1,0 +1,17 @@
+p{
+    text-align: center;
+}
+.button{
+    margin: 2em;
+    color: red;
+}
+img{
+    width: 49%;
+    height: 49%;
+}
+audio{
+    width: 10%;
+}
+body{
+    background-image: url("space.jpg");
+}
